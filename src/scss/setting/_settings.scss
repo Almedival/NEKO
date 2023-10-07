@@ -1,7 +1,37 @@
+html{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+min-height: 100%;
+display: flex;
+flex-direction: column;
+}
+
 .container {
-    position: relative;
-    margin: 0 auto;
-    padding: 0 var(--container-offset);
-    max-width: var(--container-width);
-    min-width: var(--content-width);
-  }
+max-width: var(--container-width);  
+margin: 0 auto;
+padding: 0 var(--container-offset);
+}
+
+.main {
+flex: 1 1 auto;
+}
+
+
+
+// @media (max-width:1230px){
+// .container{
+//   max-width: 970px;
+// }
+// }
+// @media (max-width:985px){
+// .container{
+//   max-width: 750px;
+// }
+// }
+// @media (max-width:765px){
+// .container{
+//   max-width: none;
+// }
+// }

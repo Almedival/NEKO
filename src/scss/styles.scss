@@ -2,8 +2,9 @@
 @import "setting/vars";
 @import "setting/fonts";
 @import "setting/settings";
-
+@import "setting/vendor";
 
 @import "components/header";
-@import "components/main";
+@import "components/hero";
+@import "components/main_content";
 @import "components/footer";
