@@ -1,0 +1,82 @@
+.footer-info {
+    background-color: var(--color-white-transparency);
+    min-height: 30vh;
+    display: flex;
+    margin-top: 380px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: start;
+    justify-content: space-between;
+    box-shadow: 0 0 100px 100px var(--color-white-transparency);
+
+}
+
+.footer {
+    background-image: url('../imgmin/footer-water.png');
+    background-size: cover;
+    display: block;
+    
+    &__nav {
+        font-weight: bold;
+        padding-top: 20px;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            transition: 0.5s;
+        }
+    
+        &:hover {
+            color: var(--color-orange);
+            transition: 0.5s;
+            &::before {
+                width: 100%;
+                left: 0;
+                background-color: var(--color-orange);
+            }
+        }
+
+        &--current{
+            &::before {
+                width: 100%;
+                transition: width 0.2s;
+            }
+        }
+    }
+}
+
+.footer-logo {
+    &__logo{
+        margin-top: 0;
+        padding: 0;
+        width: 200px;
+        height: 60px;
+    }
+
+    &__item {
+        max-width: 200px;
+        text-align: justify;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.footer-copyright {
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 10px;
+    background-color: var(--color-white-transparency);
+    box-shadow: 0 0 100px 100px var(--color-white-transparency);
+}
